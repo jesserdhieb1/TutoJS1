@@ -1,7 +1,7 @@
 //document.getElementById("count-el").innerText = 6
 
 
-let age = 22
+let age=NaN;
 
 
-console.log(age)
+console.log( typeof age);
