@@ -1,9 +1,14 @@
-//document.getElementById("count-el").innerText = 6
+//document.getElementById("count-el").textContent = 6
 
-let count=document.getElementById("count-el").innerText;
+let countEl = document.getElementById("count-el");
+let saveEl = document.getElementById("save-el");
 function increment(){
-count=parseInt(count, 10);
-count+=1;
-document.getElementById("count-el").innerText = count;
-console.log(document.getElementById("count-el").innerText )
+    let count = parseInt(countEl.textContent, 10);
+    count+=1;
+    countEl.textContent = count;
+}
+
+function save(){
+    saveEl.textContent+= countEl.textContent+" - ";
+    countEl.textContent=0;
 }
