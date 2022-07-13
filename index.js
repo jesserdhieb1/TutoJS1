@@ -1,8 +1,7 @@
 //document.getElementById("count-el").innerText = 6
 
-
-function increment(){
 let count=document.getElementById("count-el").innerText;
+function increment(){
 count=parseInt(count, 10);
 count+=1;
 document.getElementById("count-el").innerText = count;
